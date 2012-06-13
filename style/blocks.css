@@ -1,0 +1,203 @@
+/* ---------------- Blocks ---------------- */
+
+/** Override the region width **/
+#page-content #region-main-box {float:left;left:200px;position:relative;width:200%;}
+#page-content #region-post-box {float:left;left:50%;margin-left:-400px;position:relative;width:100%;}
+#page-content #region-main-wrap {float:right;position:relative;right:100%;width:50%;}
+#page-content #region-main {margin-right:0px;margin-left:400px;overflow:hidden;}
+#page-content #region-pre {float:left;left:200px;overflow:hidden;position:relative;width:200px;margin-left:-50%;}
+#page-content #region-post {float:left;left:0px;overflow:hidden;position:relative;width:200px;}
+
+/** Only side pre **/
+.side-pre-only #page-content #region-post-box {margin-left:-200px;}
+.side-pre-only #page-content #region-main {margin-left:200px;}
+.side-pre-only #page-content #region-pre {left:0px;}
+.side-pre-only #page-content #region-post {width:0px;}
+
+/** Only side post **/
+.side-post-only #page-content #region-main-box {left:0px;}
+.side-post-only #page-content #region-post-box {margin-left:-200px;}
+.side-post-only #page-content #region-main {margin-left:200px;}
+.side-post-only #page-content #region-pre {width:0px;}
+.has_dock.side-post-only .page-middle #region-main {margin-left:200px;}
+
+/** Moving block when side-post-only **/
+.blocks-moving.side-post-only #page-content #region-main-box {left:200px;width:200%;}
+.blocks-moving.side-post-only #page-content #region-post-box {margin-left:-400px;}
+.blocks-moving.side-post-only #page-content #region-main {margin-left:400px;}
+.blocks-moving.side-post-only #page-content #region-pre {left:200px;width:200px;}
+.blocks-moving.side-post-only #page-content #region-post {left:0px;width:200px;}
+
+/** No blocks whatsoever **/
+.content-only #page-content {min-width:0;}
+.content-only #page-content #region-main-box {left:0px;}
+.content-only #page-content #region-post-box {margin-left:0px;}
+.content-only #page-content #region-main {margin-left:0px;}
+.content-only #page-content #region-pre {left:0;width:0px;}
+.content-only #page-content #region-post {width:0;}
+
+/** Report layout **/
+.pagelayout-report #report-main-content .region-content {margin-left:200px;}
+.pagelayout-report #report-region-pre {width:200px;}
+
+/** Correct for right to left languages **/
+.dir-rtl.pagelayout-report #report-main-content .region-content {margin-left:0;margin-right:200px;}
+
+/** Stabalise IE6 behaviour on the report layout **/
+.ie6.pagelayout-report #report-region-wrap {float:none;width:200px;left:auto;position:absolute;top:0;}
+
+/* ---------------- Side pre and post ---------------- */
+
+.block {
+    border: none;
+}
+
+/* ---------------- Bottom Blocks ---------------- */
+
+#topblockwrap {
+    clear: both;
+    background-color: #FFFFFF;
+    float: left;
+    width: 100%;
+    min-width: 980px;
+}
+
+.top-blocks {
+    float: left;
+    width: 33.33%;
+    margin-bottom: 20px;
+}
+
+#topblockwrap .block .header h2 {
+    color: #FFFFFF;
+}
+
+#topblockwrap .block {
+    color: #FFFFFF;
+    border: none;
+}
+
+#topblockwrap .block a {
+    color: #FFFFFF;
+}
+
+#blocktopleft {
+    margin-left: 20px;
+    margin-right: 10px;
+    min-width: 200px;
+    height: 200px;
+    overflow: hidden;
+    background-color: #1468A8;
+    color: #FFFFFF;
+}
+
+#blocktopmid {
+    margin-left: 10px;
+    margin-right: 10px;
+    min-width: 200px;
+    height: 200px;
+    overflow: hidden;
+    background-color: #1468A8;
+    color: #FFFFFF;
+}
+
+#blocktopright {
+    margin-left: 10px;
+    margin-right: 20px;
+    min-width: 200px;
+    height: 200px;
+    overflow: hidden;
+    background-color: #1468A8;
+    color: #FFFFFF;
+}
+
+#btmblockwrap {
+    clear: both;
+    background-color: #FFFFFF;
+    float: left;
+    width: 100%;
+    min-width: 980px;
+}
+
+.btm-blocks {
+    width: 33.33%;
+    float: left;
+}
+
+#btmblockwrap .block .header h2 {
+    color: #000000;
+}
+
+#btmblockwrap .block {
+    color: #000000;
+    border: none;
+}
+
+#btmblockwrap .block a {
+    color: #1468A8;
+}
+
+#btmblockwrap .block a:hover {
+    color: #062134;
+    text-decoration: none;
+}
+
+#blockbtmleft {
+    margin-left: 20px;
+    margin-right: 10px;
+    min-width: 200px;
+    min-height: 1px;
+}
+
+#blockbtmmid {
+    margin-left: 10px;
+    margin-right: 10px;
+    min-width: 200px;
+    min-height: 1px;
+}
+
+#blockbtmright {
+    margin-left: 10px;
+    margin-right: 20px;
+    min-width: 200px;
+    min-height: 1px;
+}
+
+/********* Comments *********/
+#topblockwrap .comment-list li {
+    background-color: transparent;
+    color: #FFFFFF;
+}
+
+#topblockwrap .comment-list li {
+    background-color: transparent;
+    color: #3b3b3b;
+}
+
+#topblockwrap .comment-content {
+    color: #FFFFFF;
+}
+
+/********* Calendar *********/
+.calendartable th, .calendartable td {
+    border: none;
+}
+
+.calendartable tr.weekdays {
+    border-top: 2px solid #062134;
+    border-bottom: 2px solid #062134;
+}
+
+#btmblockwrap .calendartable tr.weekdays {
+    border-top: 2px solid #062134;
+    border-bottom: 2px solid #062134;
+}
+
+#topblockwrap .calendartable tr.weekdays {
+    border-top: 2px solid #FFFFFF;
+    border-bottom: 2px solid #FFFFFF;
+}
+
+#topblockwrap .block .minicalendar td.weekend {
+    color: #80ffff;
+}
