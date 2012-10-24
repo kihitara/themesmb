@@ -21,5 +21,8 @@ You can make up to nine slides at any
 one time. They are numbered automatically.
 
 *************** Updates ****************
+24/10/12
+- Fixed main content token.
+
 02/07/12
 - Block regions fixed for Moodle 2.3
